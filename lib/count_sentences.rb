@@ -12,14 +12,24 @@ class String
   end
 
   def question?
+    if self.end_with?("?")
+      return true
+    else self.end_with?("!")
+      return false
+    end
 
   end
 
   def exclamation?
-
+     if self.end_with?("!")
+      return true
+    else
+      return false
+    end
   end
 
   def count_sentences
-
-  end
+   binding.pry
 end
+end 
+
