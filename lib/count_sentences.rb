@@ -29,7 +29,7 @@ class String
   end
 
 def count_sentences
-  
+      self.strip.tr(".?!", ".").split(".").reject {|x| x.empty?}.count
  
 end 
 
